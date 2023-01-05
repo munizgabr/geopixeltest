@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geopixel test</title>
+  <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="top">
+        <div class="clock">00:00:00</div>
+      </div>
+      <div class="bottom">
+        <form>
+          <label for="checklist">Selecione uma opção:</label><br>
+          <select id="checklist">
+            <option value="">Selecione uma opção</option>
+          </select><br>
+          <label for="item">Insira um item:</label><br>
+          <input type="text" id="item"><br>
+          <div class="wrapepr-button">
+            <button type="button" id="add">Adicionar</button>
+            <button type="button" id="remove">Remover</button>
+            <button type="button" id="clear">Limpar caixa</button><br>
+          </div>
+          <span id="selected"></span>
+        </form>        
+      </div>
+    </div>
+    <div class="right">
+      <div id="parent">
+        <div id="ball"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>
